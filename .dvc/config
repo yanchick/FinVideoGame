@@ -1,0 +1,3 @@
+['remote "minio"']
+url = s3://dump/
+endpointurl = https://s3.yanchick.org
