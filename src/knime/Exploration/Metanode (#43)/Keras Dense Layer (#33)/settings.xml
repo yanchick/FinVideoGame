@@ -45,34 +45,29 @@
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
 <entry key="factory" type="xstring" value="org.knime.dl.keras.base.nodes.layers.core.dense.DLKerasDenseLayerNodeFactory"/>
-<entry key="node-name" type="xstring" value="Keras Dense Layer"/>
+<entry key="node-name" type="xstring" value="Keras Dense Layer (deprecated)"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Deep Learning - Keras Integration"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.dl.keras"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-bundle-version" type="xstring" value="3.6.1.v201808311614"/>
+<entry key="node-bundle-version" type="xstring" value="3.7.0.v201811132139"/>
 <entry key="node-feature-name" type="xstring" value="KNIME Deep Learning - Keras Integration"/>
 <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.dl.keras.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-feature-version" type="xstring" value="3.6.1.v201808311614"/>
+<entry key="node-feature-version" type="xstring" value="3.7.0.v201811291931"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Keras Dense Layer (deprecated)"/>
-<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
 <config key="port_1">
 <entry key="index" type="xint" value="1"/>
-<entry key="port_spec_class" type="xstring" value="org.knime.dl.keras.base.portobjects.DLKerasUnmaterializedNetworkPortObjectSpec"/>
-<entry key="port_object_class" type="xstring" value="org.knime.dl.keras.base.portobjects.DLKerasUnmaterializedNetworkPortObject"/>
-<entry key="port_object_summary" type="xstring" value="Keras Deep Learning Network"/>
-<entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
-<entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
-<entry key="port_dir_location" type="xstring" value="port_1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
 </config>
 </config>
 <config key="filestores">
-<entry key="file_store_location" type="xstring" value="filestore"/>
-<entry key="file_store_id" type="xstring" value="7da1a734-4eb2-4aa7-a176-c99b9f44609d"/>
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
 </config>
 </config>
