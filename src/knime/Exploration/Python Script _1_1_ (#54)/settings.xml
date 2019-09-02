@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import pandas%%00010from sklearn.metrics import mean_squared_error%%00010output_table =pandas.DataFrame( #input_table.copy()%%00010{'mse1': [mean_squared_error(input_table['jp_sales'],input_table['jp_xgboost'])],%%00010'mse2': [mean_squared_error(input_table['jp_sales'],input_table['jp_regression'])],%%00010'mse3': [mean_squared_error(input_table['jp_sales'],input_table['neural0'])],%%00010'mse4': [mean_squared_error(input_table['jp_sales'],input_table['Assembly'])],%%00010'mse5': [mean_squared_error(input_table['jp_sales'],input_table['xgboost'])],%%00010})"/>
+<entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import pandas%%00010from sklearn.metrics import mean_squared_error%%00010s = dict()%%00010for i in input_table.columns:%%00010%%00009s['mse_'+i]= mean_squared_error(input_table['jp_sales'],input_table[i])%%00010output_table =pandas.DataFrame([s])"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="PYTHON3"/>
 <entry key="convertMissingToPython" type="xboolean" value="false"/>
@@ -18,7 +18,7 @@
 <entry key="python3Command" type="xstring" value=""/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="IDLE"/>
+<entry key="state" type="xstring" value="EXECUTED"/>
 <entry key="factory" type="xstring" value="org.knime.python2.nodes.script.Python2ScriptNodeFactory"/>
 <entry key="node-name" type="xstring" value="Python Script (1⇒1)"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
@@ -31,16 +31,19 @@
 <entry key="node-feature-version" type="xstring" value="3.7.0.v201812041252"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Python Script (1⇒1)"/>
-<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="hasContent" type="xboolean" value="true"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
 <config key="port_1">
 <entry key="index" type="xint" value="1"/>
-<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 4"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="f6da7919-f874-4e7f-85f7-da926d4b0a35"/>
 </config>
 </config>

@@ -1,0 +1,36 @@
+
+{
+    "type":"object",
+    "properties":{
+        "file-chooser-58":{
+            "type":"object",
+            "properties":{
+                "items":{
+                    "type":"array",
+                    "items":{
+                        "type":"object",
+                        "properties":{
+                            "path":{
+                                "type":"string",
+                                "default":"knime://LOCAL/"
+                            },
+                            "type":{
+                                "type":"string",
+                                "default":"DIRECTORY"
+                            }
+                        }
+                    }
+                }
+            },
+            "description":"Enter Description",
+            "example":{
+                "items":[
+                    {
+                        "path":"knime://LOCAL/",
+                        "type":"DIRECTORY"
+                    }
+                ]
+            }
+        }
+    }
+}

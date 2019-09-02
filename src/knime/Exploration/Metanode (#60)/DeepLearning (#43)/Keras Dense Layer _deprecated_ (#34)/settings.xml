@@ -45,7 +45,7 @@
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <entry key="factory" type="xstring" value="org.knime.dl.keras.base.nodes.layers.core.dense.DLKerasDenseLayerNodeFactory"/>
 <entry key="node-name" type="xstring" value="Keras Dense Layer (deprecated)"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Deep Learning - Keras Integration"/>

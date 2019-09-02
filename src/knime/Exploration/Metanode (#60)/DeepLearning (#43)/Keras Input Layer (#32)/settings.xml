@@ -9,45 +9,23 @@
 <config key="m_namePrefix">
 <entry key="enabledStatus" type="xboolean" value="false"/>
 </config>
-<config key="m_spec">
-<entry key="tensor-element-type" type="xstring" value="float"/>
-<entry key="tensor-id" type="xstring" value="dense_1_0:0"/>
-<entry key="tensor-name" type="xstring" value="dense_1_0:0"/>
-<entry key="tensor-dimension-order" type="xint" value="0"/>
+<config key="m_shape">
+<entry key="DLKerasTuple.Tuple" type="xstring" value="11"/>
+<entry key="DLKerasTuple.Min" type="xint" value="1"/>
+<entry key="DLKerasTuple.Max" type="xint" value="2147483647"/>
+<entry key="DLKerasTuple.IsEnabled" type="xboolean" value="true"/>
+<entry key="DLKerasTuple.Constraint.PARTIAL" type="xstring" value="PARTIAL"/>
 </config>
-<entry key="m_units" type="xlong" value="6"/>
-<entry key="m_activation" type="xstring" value="SIGMOID"/>
-<entry key="m_useBias" type="xboolean" value="true"/>
-<config key="m_kernelInitializer">
-<entry key="struct-type" type="xstring" value="org.knime.dl.keras.core.config.initializer.DLKerasGlorotUniformInitializer"/>
-<config key="m_seed">
-<entry key="m_seed" type="xlong" value="123456789"/>
-<entry key="DLKerasSeed.IsEnabled" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="m_biasInitializer">
-<entry key="struct-type" type="xstring" value="org.knime.dl.keras.core.config.initializer.DLKerasZerosInitializer"/>
-</config>
-<config key="m_kernelRegularizer">
+<config key="m_batchSize">
 <entry key="enabledStatus" type="xboolean" value="false"/>
 </config>
-<config key="m_biasRegularizer">
-<entry key="enabledStatus" type="xboolean" value="false"/>
-</config>
-<config key="m_activityRegularizer">
-<entry key="enabledStatus" type="xboolean" value="false"/>
-</config>
-<config key="m_kernelConstraint">
-<entry key="enabledStatus" type="xboolean" value="false"/>
-</config>
-<config key="m_biasConstraint">
-<entry key="enabledStatus" type="xboolean" value="false"/>
-</config>
+<entry key="m_dataType" type="xstring" value="FLOAT_32"/>
+<entry key="m_dataFormat" type="xstring" value="CHANNEL_LAST"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
-<entry key="factory" type="xstring" value="org.knime.dl.keras.base.nodes.layers.core.dense.DLKerasDenseLayerNodeFactory"/>
-<entry key="node-name" type="xstring" value="Keras Dense Layer (deprecated)"/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.dl.keras.base.nodes.layers.core.input.DLKerasInputLayerNodeFactory"/>
+<entry key="node-name" type="xstring" value="Keras Input Layer"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Deep Learning - Keras Integration"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.dl.keras"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -57,7 +35,7 @@
 <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
 <entry key="node-feature-version" type="xstring" value="3.7.0.v201811291931"/>
 <config key="factory_settings"/>
-<entry key="name" type="xstring" value="Keras Dense Layer (deprecated)"/>
+<entry key="name" type="xstring" value="Keras Input Layer"/>
 <entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
